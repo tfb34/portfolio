@@ -109,7 +109,22 @@ ul{
     display:block;
 
 }
-
+.mProject{
+    height:70vw;
+    width: 70vw;
+    margin:1em auto;
+}
+#more-projects{
+    padding:0 10%;
+}
+.highlight{
+    width:100%;
+    height:100%;
+    background-color: rgba(1,2,10,0.6);
+    visibility: hidden;
+    float:left;
+    color:white;
+}
 @media only screen and (max-width: 550px){
     .column-1,
     .column-2,
@@ -139,6 +154,12 @@ ul{
         width:100%;
         height:25vw;
     }
+    .mProject{
+        height:25vw;
+        width:25vw;
+        display: inline-block;
+        margin:0;
+    }
 }
 @media only screen and (min-width: 768px){
     .project{
@@ -155,7 +176,7 @@ ul{
         width:1500px;
         margin: 0 auto;
     }
-    .project{
+    .project, .mProject{
         width:300px;
         height:300px;
     }
