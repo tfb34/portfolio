@@ -5,36 +5,114 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,500,600,700" rel="stylesheet">
 	<script src="myScript.js"></script>
 </head>
 <body>
-	<div class="container">
+	
 	<div id="menu">
-		<ul>
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">ABOUT</a></li>
-			<li><a href="#">PORTFOLIO</a></li>
-			<li><a href="#">CONTACT</a></li>
-		</ul>
+		<a href="#">HOME</a>
+		<a href="#">ABOUT</a>
+		<a href="#">PORTFOLIO</a>
+		<a href="#">CONTACT</a>
 	</div>
-	<section id="about"></section>
+	<section id="home">
+		<div id="text">
+		<span id="name">&mdash; Thalia Brito</span>
+		<h1>CREATING <br><span id="thirdLine">STUMBLING AND LEARNING</span></h1>
+		<a href="#"><span id="hireBtn">HIRE ME</span></a>
+		</div>
+	</section>
+	<section id="about">
+		<h2>ABOUT ME</h2>
+		<p>Hello, my name is Thalia and I am a full stack web developer based in Jersey City. I graduated from Rutgers University with a B.A. degree in Computer Science. I enrolled at Rutgers knowing very little about computer science and graduated knowing well...still very little in the grand scheme of things. Like many people in this field I like to problem solve and add some artistic flair when possible. I like completing projects and showing them to less than excited family members and friends. This all pushed me to take a deep dive down the rabbit hole that is web development. From creating mobile resonsive designs to working on the logic behind the application in MVC let's just say I came out looking like that bunny from Donnie Darko. I can code, use Git, and the drive to keep on learning.</p>
+	</section>
 	<section id="projects">
 		<h2 style="text-align:center">Projects</h2>
 		<div class="row">
 			<div class="column-4"><div class="project" style="background: url(assets/snakeGameLogo.png);background-size: cover;background-position: center;"></div></div>
-			<div class="column-4"><div class="project" style="background: url(assets/timeoutLogo.jpeg);background-size: cover;background-position: center;"></div></div>
-			<div class="column-4"><div class="project" style="background: url(assets/todoListLogo.png);background-size: contain;background-position: center;"></div></div>
+
+			<div class="column-4" onmouseover="addHighlight('timeoutInfo')" onmouseleave="removeHighlight('timeoutInfo')">
+				<div class="project" style="background: url(assets/timeoutLogo.jpeg);background-size: contain;background-position: center;">
+					<div class="highlight" id="timeoutInfo">
+						<p class="projectHeader">TIMEOUT</p>
+						<p>Timeout is a social network web application built with the Ruby on Rails framework. Registered members can submit content such as links, text posts, and images, which can be upvoted or downvoted by other members.</p>
+						<a href="https://github.com/tfb34/timeout" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="column-4" onmouseover="addHighlight('gritInfo')" onmouseleave="removeHighlight('gritInfo')">
+				<div class="project" style="background: url(assets/gritLogo.png);background-size: contain;background-position: center;">
+					<div class="highlight" id="gritInfo">
+						<p class="projectHeader">GRIT</p>
+						<p>Grit is a web application that helps users manage their personal time and tasks.</p>
+						<a href="https://github.com/tfb34/grit" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="more-projects">
 		<h2 style="text-align: center">More Projects</h2>
-		<div id="project1" class="mProject" style="background: url(assets/battleshipLogo.png);background-size: contain;background-position: center;" onmouseover="addHighlight('battleshipInfo')" onmouseleave="removeHighlight('battleshipInfo')"><div class="highlight" id="battleshipInfo">Helo my name is Thalia</div></div>
-		<div id="project2" class="mProject" style="background: url(assets/stackLogo.png);background-size: cover;background-position: center;"></div>
-		<div id="project3" class="mProject" style="background: url(assets/chessLogo.png);background-size: cover;background-position: center;"></div>
-		<div id="project4" class="mProject" style="background: url(assets/blackJackLogo.png);background-size: cover;background-position: center;"></div>
-		<div id="project5" class="mProject" style="background: url(assets/mastermindLogo.png);background-size: cover;background-position: center;"></div>
+
+		<div id="project1" class="mProject" style="background: url(assets/battleshipLogo.png);background-size: contain;background-position: center;" onmouseover="addHighlight('battleshipInfo')" onmouseleave="removeHighlight('battleshipInfo')">
+			<div class="highlight" id="battleshipInfo">
+				<p class="projectHeader">BATTLESHIP</p>
+				<p>A guessing game where player and AI take turns calling "shots" at the other player's ships. The objective is to destroy the enemy's fleet before your fleet is destroyed.</p>
+				<a href="https://github.com/tfb34/battleship" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
+			</div>
+		</div>
+
+		<div id="project2" class="mProject" style="background: url(assets/stackLogo.png);background-size: cover;background-position: center;" onmouseover="addHighlight('stackInfo')" onmouseleave="removeHighlight('stackInfo')">
+			<div class="highlight" id="stackInfo">
+				<p class="projectHeader">STACK</p>
+				<p>Stack is a game where the objective is to stack the tiles as high as you can. It's a clone of the popular mobile game called Stack. Built with: Unity, C#</p>
+				<a href="https://github.com/tfb34/StackGame" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
+			</div>
+		</div>
+
+		<div id="project3" class="mProject" style="background: url(assets/chessLogo.png);background-size: cover;background-position: center;" onmouseover="addHighlight('chessInfo')" onmouseleave="removeHighlight('chessInfo')">
+			<div class="highlight" id="chessInfo">
+				<p class="projectHeader">CHESS</p>
+				<p>Chess is a two-player strategy game played on the command line. Players have the option to start a new game or continue from a saved match. Built with: Ruby, YAML</p>
+				<a href="https://github.com/tfb34/chess" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
+			</div>
+		</div>
+
+		<div id="project4" class="mProject" style="background: url(assets/blackJackLogo.png);background-size: cover;background-position: center;" onmouseover="addHighlight('blackJackInfo')" onmouseleave="removeHighlight('blackJackInfo')">
+			<div class="highlight" id="blackJackInfo">
+				<p class="projectHeader">BLACKJACK</p>
+				<p>Blackjack is a command line game in which the players must have a higher score than the dealer, without going over 21. Built with: Java</p>
+				<a href="https://github.com/tfb34/BlackJack" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
+			</div>
+		</div>
+
+		<div id="project5" class="mProject" style="background: url(assets/mastermindLogo.png);background-size: cover;background-position: center;" onmouseover="addHighlight('mastermindInfo')" onmouseleave="removeHighlight('mastermindInfo')">
+			<div class="highlight" id="mastermindInfo">
+				<p class="projectHeader">MASTERMIND</p>
+				<p>Mastermind is a text-based puzzle where you are given 12 chances to guess the computer generated secret code. Built with: Ruby</p>
+				<a href="https://github.com/tfb34/mastermind" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
+			</div>
+		</div>
+
+		<div id="project6" class="mProject" style="background: url(assets/wheresWaldoLogo.png);background-size: cover;background-position: center;" onmouseover="addHighlight('wheresWaldoInfo')" onmouseleave="removeHighlight('wheresWaldoInfo')">
+			<div class="highlight" id="wheresWaldoInfo">
+				<p class="projectHeader">WHERE'S WALDO</p>
+				<p>Where's Waldo is basically Hidden Pictures in those Highlights magazines for children. Choose a photograph and tag Waldo and his friends as fast as you can. Top 10 players make it on the leaderboard. Built with: Rails, Ruby, PostgreSQL</p>
+				<a href="https://github.com/tfb34/find-waldo" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
+			</div>
+		</div>
+
+		<div id="project6" class="mProject" style="background: url(assets/wjs.png);background-size: cover;background-position: center;" onmouseover="addHighlight('wjsInfo')" onmouseleave="removeHighlight('wjsInfo')">
+			<div class="highlight" id="wjsInfo">
+				<p class="projectHeader">WJS</p>
+				<p>This is a business website for an accounting firm called Washington J.Sanches &amp; Associates. It showcases their services, bio, and contact information. There's also a contact form and mortgage calculator for clients to utilize.</p>
+				<a href="https://jscpagrowth.herokuapp.com/" title="source code">View Website</a>
+			</div>
+		</div>
+
 	</section>
 	<section id="footer"></section>
-	</div>
+	
 </body>
 </html>
