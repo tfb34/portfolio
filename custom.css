@@ -1,5 +1,5 @@
 body{
-    background-color: pink;
+    
     margin:0;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -149,7 +149,7 @@ ul{
     width:90%;
     margin:0 auto;
 }
-#menu{
+#desktop-menu{
     background-color:rgba(255,255,255,0.9);
     position: fixed;
     top:0;
@@ -158,15 +158,16 @@ ul{
     text-align: center;
     padding:1em 0;
     z-index:1;
+    display: none;
 }
-#menu:hover{
+#desktop-menu:hover{
     background-color:white;
 }
-#menu a{
+#desktop-menu a{
     color:#999;
     margin:1em;
 }
-#menu a:hover{
+#desktop-menu a:hover{
     color:#4d4d4d;
 }
 a{
@@ -222,6 +223,101 @@ h2{
     font-weight:bold;
     border-radius:5px;
 }
+#mobile-menu{
+    display:block;
+    position: fixed;
+    z-index:1;
+}
+#mobile-menu-links{
+    display:none;
+    list-style-type: none;
+    background-color: rgba(0,0,0,0.87);
+    height:100vh;
+    width:100%;
+    position: fixed;
+    z-index:1;
+    text-align:center;
+    padding:12em 0 0 0;
+    top:0;
+}
+#mobile-menu-links li{
+    padding: 1em 0;
+}
+#mobile-menu-links a{
+    font-size:25px;
+    color: lightgrey;
+    padding:0;
+}
+#btn{
+  background-color:black;
+  width:48px;
+  height:48px;
+  display:block;
+  position:relative;
+  cursor:pointer;
+  z-index:2;
+}
+#btn span{
+  width:18px;
+  height:1px;
+  background-color:white;
+  display:block;
+  position:absolute;
+  left:15px;
+  animation-duration: 0.5s; 
+  animation-fill-mode:both
+}
+#top-line{
+  top:20px;
+}
+#bottom-line{
+  top:28px; 
+}
+
+@keyframes lean-right{
+  0%{
+    transform: translateY(0) rotate(0deg)
+  }
+  100%{
+    transform: translateY(5px) rotate(135deg)
+  }
+}
+@keyframes lean-left{
+   0%{
+    transform: translateY(0) rotate(0deg)
+  }
+  100%{
+    transform: translateY(-3px) rotate(45deg)
+  }
+}
+@keyframes top-parallel{
+   0%{
+      transform: translateY(5px) rotate(135deg)
+  }
+  100%{
+     transform: translateY(0) rotate(0deg)
+  }
+}
+@keyframes bottom-parallel{
+  0%{
+    transform: translateY(-3px) rotate(45deg)
+  }
+  100%{
+    transform: translateY(0) rotate(0deg)
+  }
+}
+.lean-right{
+   animation-name: lean-right;
+}
+.lean-left{
+   animation-name: lean-left;
+}
+.top-parallel{
+   animation-name: top-parallel;
+}
+.bottom-parallel{
+   animation-name: bottom-parallel;
+}
 @media only screen and (max-width: 550px){
     .column-1,
     .column-2,
@@ -270,6 +366,13 @@ h2{
     .project, .mProject{
         width: 30vw;
         height:30vw;
+    }
+
+    #desktop-menu{
+        display:block;
+    }
+    #mobile-menu{
+        display:none;
     }
     /*
     .projectHeader{
