@@ -1,5 +1,5 @@
 body{
-    
+    background-color:#e7d9d9;
     margin:0;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -321,7 +321,56 @@ h2{
 .active{
     color:white !important;
 }
+#footer{
+    background-color: rgb(20, 20, 20);
+    height:20em;
+    width:100%;
+}
+#footer ul{
+    text-align: center;
+    padding:8em 0 0 0;
+}
+#footer img{
+    color:rgba(255,255,255,0.7);
+    height:1.5em;
+}
+#footer p{
+    text-align: center;
+    color:rgba(255,255,255,0.7);
+    padding:1em;
+    
+    font-weight:100;
+    letter-spacing: 2px;
+    font-size:18px;
+}
+#contact div>div{
+    text-align: center;
+}
+#contact{
+    background-color:white;
+    text-align:center;
+    padding:3.5em 0 5em 0;
+}
+#contact h2{
+    padding:2em 0;
+    text-align: center;
+    color: #4d4d4d;
+    margin:0;
+}
+#contact p,#contact a{
+    padding:1em 0;
+}
 
+#contact a{
+    color:black;
+    font-weight:200;
+}
+#contact a:hover{
+    text-decoration: underline;
+}
+section{
+    border-bottom:1px solid black;
+}
 @media only screen and (max-width: 550px){
     .column-1,
     .column-2,
