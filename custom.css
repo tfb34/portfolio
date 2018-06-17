@@ -371,6 +371,20 @@ h2{
 section{
     border-bottom:1px solid black;
 }
+#project-menu{
+    text-align: center;
+}
+#project-menu span{
+    padding: 0 0 0.2em;
+    margin: 0 1em;
+    cursor: pointer;
+}
+#project-menu span:hover{
+    border-bottom: 1px solid black;
+}
+.selected{
+    border-bottom: 1px solid black;
+}
 @media only screen and (max-width: 550px){
     .column-1,
     .column-2,

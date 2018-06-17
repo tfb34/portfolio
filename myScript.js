@@ -53,9 +53,9 @@ function toggle(){
 // find element with class name id-link
 // traverse all elements
 	//add class active
-
-const menuItems = document.getElementsByClassName("nav-link");
+let  menuItems = document.getElementsByClassName("nav-link");
 function updateLinkCSS(id){
+	
 	[].forEach.call(menuItems, function(x){
 		x.classList.remove("active");
 	});
@@ -76,3 +76,12 @@ window.addEventListener('scroll', function(e){
 		updateLinkCSS(id);
 	}
 });
+
+function select(obj){
+	let  projectMenuItems = document.getElementById('project-menu').children;
+	[].forEach.call(projectMenuItems, function(x){
+		x.classList.remove("selected");
+	});
+
+	document.getElementById(obj.id).classList.add("selected");
+}
