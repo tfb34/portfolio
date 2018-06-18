@@ -84,4 +84,23 @@ function select(obj){
 	});
 
 	document.getElementById(obj.id).classList.add("selected");
+	console.log(obj.id);
+	//if all then show all
+	let allProjects = document.getElementById('more-projects').getElementsByClassName('mProject');
+	if(obj.id === "all"){
+		[].forEach.call(allProjects, function(x){
+			x.style.display ="inline-block";
+		});
+	}else{
+		[].forEach.call(allProjects, function(x){
+			x.style.display ="none";
+		});
+
+		let projects = document.getElementsByClassName(obj.id);
+		[].forEach.call(projects, function(x){
+			x.style.display = "inline-block";
+		});
+	}
+
 }
+//hide all elements except the ones with class name specified
