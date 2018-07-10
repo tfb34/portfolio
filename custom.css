@@ -407,6 +407,9 @@ section{
     font-size: 18px;
     letter-spacing: 2px;
 }
+#home, #about{
+    border-bottom: none;
+}
 @media only screen and (max-width: 550px){
     .column-1,
     .column-2,
