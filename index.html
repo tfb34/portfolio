@@ -14,7 +14,7 @@
 		<a class="nav-link home-link active" href="javascript:scrollToSection('home')">HOME</a>
 		<a class="nav-link about-link" href="javascript:scrollToSection('about')">ABOUT</a>
 		<a class="nav-link work-experience-link" href="javascript:scrollToSection('work-experience')">WORK EXPERIENCE</a>
-		<a class="nav-link projects-link" href="javascript:scrollToSection('projects')">PORTFOLIO</a>
+		<a class="nav-link projects-link" href="javascript:scrollToSection('more-projects')">PORTFOLIO</a>
 		<a class="nav-link contact-link" href="javascript:scrollToSection('contact')">CONTACT</a>
 	</div>
 
@@ -27,7 +27,7 @@
 			<li><a class="nav-link home-link active" href="javascript:scrollToSection('home')">HOME</a></li>
 			<li><a class="nav-link about-link" href="javascript:scrollToSection('about')">ABOUT</a></li>
 			<li><a class="nav-link work-experience-link" href="javascript:scrollToSection('work-experience')">WORK EXPERIENCE</a></li>
-			<li><a class="nav-link projects-link" href="javascript:scrollToSection('projects')">PORTFOLIO</a></li>
+			<li><a class="nav-link projects-link" href="javascript:scrollToSection('more-projects')">PORTFOLIO</a></li>
 			<li><a class="nav-link contact-link"  href="javascript:scrollToSection('contact')">CONTACT</a></li>
 		</ul>
 	</div>
@@ -62,33 +62,9 @@
 			</div>
 		</div>
 	</section>
-	<section id="projects">
-		<h2 style="text-align:center"><span class="subheader">PROJECTS</span></h2>
-		<div class="row" style="max-width: 1024px; margin: 0 auto;">
-			<div class="column-4"><div class="project" style="background: url(assets/snakeGameLogo.png);background-size: cover;background-position: center;"></div></div>
 
-			<div class="column-4" onmouseover="addHighlight('timeoutInfo')" onmouseleave="removeHighlight('timeoutInfo')">
-				<div class="project" style="background: url(assets/timeoutLogo.jpeg);background-size: contain;background-position: center;">
-					<div class="highlight" id="timeoutInfo">
-						<p class="projectHeader">TIMEOUT</p>
-						<p>Timeout is a social network web application built with the Ruby on Rails framework. Registered members can submit content such as links, text posts, and images, which can be upvoted or downvoted by other members.</p>
-						<a href="https://github.com/tfb34/timeout" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
-					</div>
-				</div>
-			</div>
-			<div class="column-4" onmouseover="addHighlight('gritInfo')" onmouseleave="removeHighlight('gritInfo')">
-				<div class="project" style="background: url(assets/gritLogo.png);background-size: contain;background-position: center;">
-					<div class="highlight" id="gritInfo">
-						<p class="projectHeader">GRIT</p>
-						<p>Grit is a web application that helps users manage their personal time and tasks.</p>
-						<a href="https://github.com/tfb34/grit" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section id="more-projects">
-		<h2 style="text-align: center;margin:0"><span class="subheader">MORE PROJECTS<span></h2>
+		<h2 style="text-align: center;margin:0"><span class="subheader">PROJECTS<span></h2>
 		<div id="project-menu">
 			<span id="all" class="selected" onclick="select(this)">All</span>
 			<span id="csharp" onclick="select(this)">C#</span>
@@ -102,7 +78,7 @@
 		<div id="project0" class="mProject js" style="background: url(assets/snakeGameLogo.png);background-size: contain;background-position: center;" onmouseover="addHighlight('snakeGameInfo')" onmouseleave="removeHighlight('snakeGameInfo')">
 			<div class="highlight" id="snakeGameInfo">
 				<p class="projectHeader">SNAKE GAME</p>
-				<p>A guessing game where player and AI take turns calling "shots" at the other player's ships. The objective is to destroy the enemy's fleet before your fleet is destroyed. Built with: JS, CSS, HTML</p>
+				<p>The player maneuvers a line that grows in length as it eats apples, with the length being the primary obstacle. Built with: Javascript, CSS, HTML</p>
 				<a href="https://github.com/tfb34/snake-game" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
 			</div>
 		</div>
@@ -118,7 +94,7 @@
 		<div id="project2" class="mProject ruby" style="background: url(assets/gritLogo.png);background-size: contain;background-position: center;" onmouseover="addHighlight('gritInfo')" onmouseleave="removeHighlight('gritInfo')">
 			<div class="highlight" id="gritInfo">
 				<p class="projectHeader">GRIT</p>
-				<p>Grit is a web application that helps users manage their personal time and tasks. Built with: Javascript, CSS, HTML</p>
+				<p>Grit is a web application that helps users manage their personal time and tasks. Built with: Javascript, CSS, HTML, Babel</p>
 				<a href="https://github.com/tfb34/grit" title="source code"><img src="assets/GitHub-Mark-Light-32px.png"></a>
 			</div>
 		</div>
@@ -176,11 +152,11 @@
 		<div class="row">
 			<div class="column-6" style="padding-bottom:2em">
 				<p>Github</p>
-				<a href="https://github/tfb34">/tfb34</a>
+				<a href="https://github.com/tfb34">/tfb34</a>
 			</div>
 			<div class="column-6">
 				<p>Email</p>
-				<a href="mailto:britothalia212@gmail.com">britothalia@gmail.com</a>
+				<a href="mailto:britothalia212@gmail.com">britothalia212@gmail.com</a>
 			</div>
 		</div>
 		</div>
