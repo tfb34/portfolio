@@ -11,9 +11,6 @@ function removeHighlight(obj){
 
 function scrollToSection(id){
 
-	//let m = document.getElementById(id+'-link');
-	//m.style.color = "green";
-	console.log("hello");
 	let elmnt = document.getElementById(id)
 	elmnt.scrollIntoView({behavior:"smooth",block:"start"});
 	let mobilemenu = document.getElementById('mobile-menu-links');
@@ -21,11 +18,13 @@ function scrollToSection(id){
 		toggle();
 		mobilemenu.style.display = "none";
 	}
+
 	updateLinkCSS(id);
 }
 
+//Update this. ugly to look at
 function toggle(){
-	console.log("toggle");
+
 	let topLine = document.getElementById('top-line');
   let bottomLine = document.getElementById('bottom-line');
   let menu = document.getElementById('mobile-menu-links');
@@ -61,17 +60,15 @@ function updateLinkCSS(id){
 	});
 
 	let elems = document.getElementsByClassName(id+"-link");
-	console.log(elems);
 	[].forEach.call(elems, function(x){
-		console.log("active");
 		x.classList.add("active");
 	});
 }
 
 window.addEventListener('scroll', function(e){
-	console.log("scrolling");
+
 	let id = document.elementFromPoint(0,53).id;
-	console.log(id);
+
 	if(id != ""){
 		updateLinkCSS(id);
 	}
@@ -84,7 +81,6 @@ function select(obj){
 	});
 
 	document.getElementById(obj.id).classList.add("selected");
-	console.log(obj.id);
 	//if all then show all
 	let allProjects = document.getElementById('more-projects').getElementsByClassName('mProject');
 	if(obj.id === "all"){
