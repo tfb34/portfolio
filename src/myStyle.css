@@ -586,6 +586,7 @@ ul{
 }
 #menu{
   opacity: 0;
+  display: none;
   position: fixed;
   /*height:100vh;*/
   height:0;
@@ -680,13 +681,13 @@ ul{
 }
 #myramen{
   /*background-color: #F2F2F2;*/
-  background-color: #BEDEF8;
+  background-color: white;
 }
 #jscpagrowth{
   background-color: #242774;
 }
 #colibritech{
-  background-color: #FAFAFA;
+  background-color: #B7C0EE;;
 }
 .project div{
   height:60vh;
@@ -975,6 +976,11 @@ position: absolute !important;
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+
+#menu a:hover,.see-projects-wrapper a:hover{
+  color:#ff4b4c;
+  transition: 0.4s;
 }
 @media only screen and (min-width: 1024px){
   #contact-page .one{

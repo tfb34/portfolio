@@ -28,12 +28,19 @@ function animateMenuBtn(x){
 function toggleMenu(){
 	var menu = document.getElementById("menu");
 
-	if(menu.classList.contains("liftUpMenu"))
+	if(menu.classList.contains("liftUpMenu")){
+		menu.style.display = "block";
 		menu.classList.replace("liftUpMenu", "dropDownMenu");
-	else if(menu.classList.contains("dropDownMenu"))
+	}
+	else if(menu.classList.contains("dropDownMenu")){
 		menu.classList.replace("dropDownMenu","liftUpMenu");
-	else
+		setTimeout(function(){ menu.style.display = "none"; }, 500);
+	}
+	else{
+		menu.style.display = "block";
 		menu.classList.add("dropDownMenu");
+	}
+
 }
 
 function showImg(x){
