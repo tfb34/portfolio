@@ -487,16 +487,15 @@ ul{
 }
 .menu-btn span:nth-child(2){
   margin:0 3px;
-  background-color:#070606;
 }
-.menu-btn span:nth-child(3){
+/*.menu-btn span:nth-child(3){
     position: absolute;
-    top: 3px;
+    top: 4px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-}
+}*/
 
 @keyframes fadein{
   from{
@@ -523,6 +522,7 @@ ul{
     }
     to{
       transform: translateX(11px);
+      visibility: hidden;
     }
 }
 @keyframes moveLeft{
@@ -554,11 +554,11 @@ ul{
     border-radius: 100%;
   }
   50%{
-    transform: scale(1,5);
+    transform: translateX(-11px) scale(1,5);
     border-radius: 0px;
   }
   100%{
-    transform: rotate(-45deg) scale(1,5);
+    transform: translateX(-11px) rotate(-45deg) scale(1,5);
     border-radius: 0px;
     background-color: #070606;
   }
@@ -580,10 +580,11 @@ ul{
   animation-fill-mode: forwards;
 }
 .moveLeft{
-  animation: moveLeft 0.5s;
-  animation-fill-mode: forwards;
+  animation: moveLeft 0.5s forwards, growTwo 0.4s 0.2s forwards;/*0.2*/
+  /*animation-fill-mode: forwards;*/
   background-color:#070606 !important;
 }
+
 #menu{
   opacity: 0;
   display: none;

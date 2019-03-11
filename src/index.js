@@ -14,13 +14,13 @@ function loadPage(){
 function animateMenuBtn(x){
 	var leftDot = x.getElementsByTagName('span')[0];
 	var midDot = x.getElementsByTagName('span')[1];
-	var midDot2 = x.getElementsByTagName('span')[2];
-	var rightDot = x.getElementsByTagName('span')[3];
+	/*var midDot2 = x.getElementsByTagName('span')[2];*/
+	var rightDot = x.getElementsByTagName('span')[2];
 	leftDot.classList.toggle("moveRight");
 	rightDot.classList.toggle("moveLeft");
 
 	midDot.classList.toggle("grow");
-	midDot2.classList.toggle("grow2");
+	/*midDot2.classList.toggle("grow2");*/
 
 	toggleMenu();
 }
