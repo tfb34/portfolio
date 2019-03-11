@@ -20,7 +20,7 @@ function animateMenuBtn(x){
 	rightDot.classList.toggle("moveLeft");
 
 	midDot.classList.toggle("grow");
-	/*midDot2.classList.toggle("grow2");*/
+
 
 	toggleMenu();
 }
